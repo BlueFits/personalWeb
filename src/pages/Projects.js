@@ -1,4 +1,5 @@
 import React from "react";
+import FadeIn from "react-fade-in";
 import projectHeader from "../assets/images/project_header.svg";
 
 const Projects = () => {
@@ -10,9 +11,17 @@ const Projects = () => {
                     <img src={projectHeader} alt="project_header.svg" className="project-header-svg"/>
                 </div>
                 <ul className="project-ul">
-                    <li className="project-li">
-                        <div className="project-content"></div>
-                    </li>
+                    <FadeIn className="project-fadeIn">
+                        <li className="project-li">
+                            <div className="project-content"></div>
+                        </li>
+                        <li className="project-li">
+                            <div className="project-content"></div>
+                        </li>
+                        <li className="project-li">
+                            <div className="project-content"></div>
+                        </li>
+                    </FadeIn>
                 </ul>
             </div>
         </section>

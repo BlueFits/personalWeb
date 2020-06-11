@@ -309,6 +309,10 @@ section {
 .project-ul {
     width: 100%;
     padding: 0 6%;
+}
+
+.project-fadeIn {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
