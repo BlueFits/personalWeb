@@ -35,6 +35,48 @@
     background: #555;
 }
 
+.animatedTextContainer {
+    background-color: bisque;
+    position: relative;
+    cursor: default;
+    user-select: none;
+    --maskX: 0;
+    --maskY: 0;
+}
+
+.animatedTextContent {
+    color: #000000;
+    margin: 0;
+}
+
+.animatedTextContentClone {
+    color: #000000;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #fff;
+
+    transition: all 0.4s ease-out;
+    clip-path: polygon(
+        0 0,
+        calc(var(--maskX)* 1% + (var(--maskY) - 50) * 0.4%) 0,
+        calc(var(--maskX)* 1% + (var(--maskY) - 50) * -0.4%) 100%,
+        0 100%
+    );
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a {
+    margin: 15px 10px;
+    position: relative;
+    left: -13px;
+}
+
 .animated-icon {
     height: 1.5em;
     display: flex;

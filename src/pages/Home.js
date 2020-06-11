@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { IoIosArrowDown } from "react-icons/io";
 import { Animated } from "react-animated-css";
 import TextLoop from "react-text-loop";
 import { Link } from "react-router-dom";
+//ICONS
+import { IoIosArrowDown } from "react-icons/io";
+import { FaFacebookF, FaLinkedinIn, FaGit, FaInstagramSquare } from "react-icons/fa";
 //COMPONENTS
 import Greeters from "../components/home/Greeters";
 //IMAGES
@@ -78,7 +80,12 @@ const Home = () => {
     );
 
     const socialMediaIcons = (
-        <div></div>
+        <div className="social-icons">
+            <a style={{ color: "#fff" }} href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebookF size="1.5em" /></a>
+            <a style={{ color: "#fff" }} href="#"><FaGit size="1.5em" /></a>
+            <a style={{ color: "#fff" }} href="#"><FaInstagramSquare size="1.5em" /></a>
+            <a style={{ color: "#fff" }} herf="#"><FaLinkedinIn size="1.5em" /></a>
+        </div>
     );
 
     //HANDLERS
