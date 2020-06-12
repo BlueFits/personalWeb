@@ -16,12 +16,17 @@ const Contact = () => {
 
     //EFFECTS
     useEffect(() => {
+        //For missing dependancy error
+        const textAnim = [
+            "tada",
+            "pulse",
+            "flash",
+        ];
         setAnim(textAnim[randomNum()]);
     }, []);
 
     return(
         <section style={{ backgroundColor: "#f76c6c" }}>
-            <div style={{ backgroundColor: "#f76c6c" }} className="spacing-compensate"></div>
             <div className="contact-container">
                 <div className="contact-content-wrapper">
                     <FadeIn>

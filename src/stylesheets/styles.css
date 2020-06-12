@@ -154,6 +154,12 @@ section {
 .navigationText {
     font-family: "myriadSemiBold", sans-serif;
     color: #fff;
+    border-bottom: 2px solid rgba(255, 255, 255, 0);
+    transition: 0.2s ease-in-out;
+}
+
+.navigationText:hover {
+    border-bottom: 2px solid rgba(255, 255, 255, 1);
 }
 
 .home-section {
@@ -245,6 +251,7 @@ section {
     background-color: #24305e;
     min-height: 100vh;
     padding-top: 100px;
+    padding-bottom: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -348,4 +355,30 @@ section {
 
 .contact-email {
     margin-top: 15px;
+}
+
+footer {
+    padding: 0 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+}
+
+footer ul li {
+    margin: 0 5px;
+}
+
+footer ul li a {
+    text-decoration: none;
+}
+
+footer p {
+    color: #fff;
+    font-size: 11px;
 }

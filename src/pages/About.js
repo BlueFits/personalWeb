@@ -1,25 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Fade from "react-reveal/Fade";
+import { useLocation } from "react-router-dom";
+import { Animated } from "react-animated-css";
 //IMAGES
 import aboutHeader from "../assets/images/about-header.svg";
 //COMPONENTS
 import Content from "../components/about/Content";
 
 const About = () => {
-    /* Scroll to top of the page
+
     const { pathname } = useLocation();
 
     useEffect(() => {
         window.scrollTo(0,0);
     }, [pathname]);
-    */
+
     return(
         <section>
             <div style={{ backgroundColor: "#24305e" }} className="spacing-compensate"></div>
             <div className="about-container">
-                <div className="about-header">
-                    <img src={aboutHeader} alt="about-header.svg" className="about-header-svg"/>
-                </div>
+                <Animated animationIn="fadeIn">
+                    <div className="about-header">
+                        <img src={aboutHeader} alt="about-header.svg" className="about-header-svg"/>
+                    </div>
+                </Animated>
                 <Fade bottom>
                     <Content 
                         style={{ marginTop: "80px" }}

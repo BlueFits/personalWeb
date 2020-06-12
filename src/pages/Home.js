@@ -97,11 +97,11 @@ const Home = () => {
     
     function buttonHandler(setAnim) {
         setTimeout(() => {
-            setAnim(1000)
+            setAnim(500)
         });
         setTimeout(() => {
             setAnim(0)
-        }, 2000);
+        }, 1000);
     };
 
     return(
@@ -158,7 +158,7 @@ const Home = () => {
                     </Animated>
                 </div>
             </div>
-        </section>      
+        </section>
     );
 }
 
@@ -172,19 +172,4 @@ const styles = {
     },
 };
 
-//HELPER FUNCTIONS
-/*
-function useWindowSize() {
-    const [size, setSize] = useState([0, 0]);
-    useLayoutEffect(() => {
-        function updateSize() {
-            setSize([window.innerWidth, window.innerHeight]);
-        };
-        window.addEventListener("resize", updateSize);
-        updateSize();
-        return () => window.removeEventListener("resize", updateSize);
-    }, []);
-    return size;
-}
-*/
 export default Home;
