@@ -38,3 +38,22 @@ export const FadeInRight = (props) => {
         </div>
     );
 };
+
+export const BlurFadeIn = (props) => {
+    const [isVisible, setIsVisible] = useState();
+    const domRef = useRef();
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(entries => entries.forEach(entry => setIsVisible(entry.isIntersecting)));
+        observer.observe(domRef.current);
+    }, []);
+
+    return (
+        <div
+            className={`blur-fade-in ${isVisible ? 'is-visible-blur' : ''}`}
+            ref={domRef}
+        >
+            {props.children}
+        </div>
+    );
+};
