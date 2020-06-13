@@ -25,15 +25,29 @@ const Home = () => {
         header: (
             <TextLoop interval={aboutAnim}>
                 <span>My Favourite Quote</span>
-                <span>Another Random Fact</span>
+                <span>I love basketball</span>
+                <span>Big fan of fantasy books</span>
+                <span>Self-Improvement and Entrepreneurship</span>
+                <span>Favourite articles</span>
             </TextLoop>
         ),
         description: (
             <TextLoop noWrap={false} interval={aboutAnim}>
                 <span>One of my favourite works of literature is “Keys To Success” by B.C. Forbes.</span>
                 <span>
-                    So basically the shortest amount of text becomes the width 
-                    for our text.
+                    I played organized basketball all througout my early years. 
+                </span>
+                <span>
+                    I have ready many books but my all time favourite genre has to be fantasy.
+                    Name of the wind by Patrick Rothfuss is probably my favourite one in this genre.
+                </span>
+                <span>
+                    I love to read self-improvement and entrepreneurship books. To name a few of my favourites: Fastlane
+                    to Millionaire, Lean Startup, Personal MBA, The Pumpkin Plan, etc.
+                </span>
+                <span>
+                    <a style={{ textDecoration: "underline", color: "#fff" }} href="https://app.getpocket.com/read/1383667666">Love the Problem, Not Your Solution</a>
+                    <p>By Ash Maurya</p>
                 </span>
             </TextLoop>
         ),
@@ -43,7 +57,7 @@ const Home = () => {
         header: (
             <TextLoop interval={projectAnim}>
                 <span>BetterThanYesterday</span>
-                <span>BetterThanYesterday</span>
+                <span>Portlogue</span>
             </TextLoop>
         ),
         description: (
@@ -55,10 +69,10 @@ const Home = () => {
                     previous day
                 </span>
                 <span>
-                    My first mobile application made with React-Native.
-                    This app use a point system to asses your day and
-                    the goal is to aquire my points than you did on the
-                    previous day
+                    My first full stack website. This website has all the 
+                    functionalities of a typical social media. You can 
+                    upload an avatar, have real time messages, comment on portfolios
+                    and search up portfolios in detail. 
                 </span>
             </TextLoop> 
         ),
@@ -81,10 +95,10 @@ const Home = () => {
 
     const socialMediaIcons = (
         <div className="social-icons">
-            <a style={{ color: "#fff" }} href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebookF size="1.5em" /></a>
-            <a style={{ color: "#fff" }} href="#"><FaGit size="1.5em" /></a>
-            <a style={{ color: "#fff" }} href="#"><FaInstagramSquare size="1.5em" /></a>
-            <a style={{ color: "#fff" }} herf="#"><FaLinkedinIn size="1.5em" /></a>
+            <a style={{ color: "#fff" }} href="https://www.facebook.com/profile.php?id=100047736457748" target="_blank" rel="noopener noreferrer"><FaFacebookF size="1.5em" /></a>
+            <a style={{ color: "#fff" }} href="https://github.com/BlueFits" target="_blank" rel="noopener noreferrer"><FaGit size="1.5em" /></a>
+            {/*<a style={{ color: "#fff" }} href="#"><FaInstagramSquare size="1.5em" /></a>*/}
+            <a style={{ color: "#fff" }} href="https://www.linkedin.com/in/christian-rojas-16194a186" target="_blank" rel="noopener noreferrer"><FaLinkedinIn size="1.5em" /></a>
         </div>
     );
 
