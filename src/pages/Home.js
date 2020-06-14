@@ -4,7 +4,7 @@ import TextLoop from "react-text-loop";
 import { Link } from "react-router-dom";
 //ICONS
 import { IoIosArrowDown } from "react-icons/io";
-import { FaFacebookF, FaLinkedinIn, FaGit, FaInstagramSquare } from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn, FaGit } from "react-icons/fa";
 //COMPONENTS
 import Greeters from "../components/home/Greeters";
 //IMAGES

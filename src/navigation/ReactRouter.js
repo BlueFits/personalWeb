@@ -4,8 +4,11 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
+import { BrowserView, MobileView } from "react-device-detect";
+
 //NAVIGATION
 import NavigationBar from "./NavigationBar";
+import MobileNavigationBar from "./MobileNavigationBar";
 //PAGES
 import Home from "../pages/Home";
 import About from "../pages/About";
@@ -16,10 +19,17 @@ import NoMatch from "../pages/NoMatch";
 import Footer from "../components/Footer";
 
 export default function RouteNavigator() {
+
   return (
     <Router>
       <div>
-        <NavigationBar />
+        <BrowserView>
+          <NavigationBar />
+        </BrowserView>
+
+        <MobileView>
+          <MobileNavigationBar />
+        </MobileView>
 
         <Switch>
           <Route exact path="/">

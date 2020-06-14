@@ -3,7 +3,7 @@ import React from "react";
 const ProjectList = ({ projectLink, classImage, logo }) => {
  return(
     <li className="project-li">
-        <a href={projectLink} target="_blank" rel="referrer noopener">
+        <a href={projectLink} target="_blank" rel="noopener noreferrer">
             <div className="project-content">
                 <div className={`project-background  ${classImage}`} >
                     <div>

@@ -3,7 +3,7 @@ import Fade from "react-reveal/Fade";
 import { useLocation } from "react-router-dom";
 import { Animated } from "react-animated-css";
 //IMAGES
-import aboutHeader from "../assets/images/about-header.svg";
+import aboutHeader from "../assets/images/about-header.png";
 //COMPONENTS
 import Content from "../components/about/Content";
 

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Animated } from "react-animated-css";
 import FadeIn from "react-fade-in";
-import projectHeader from "../assets/images/project_header.svg";
+import projectHeader from "../assets/images/project_header.png";
 //ASSETS
 import BtyLogo from "../assets/images/BetterThanYesterday/logo.png";
 import PL from "../assets/images/PortLogue/logo.png";

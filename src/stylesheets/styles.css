@@ -175,6 +175,51 @@ section {
     border-bottom: 2px solid rgba(255, 255, 255, 1);
 }
 
+.mobile-navigation-bar {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 6%;
+    height: 10vh;
+    width: 100vw;
+}
+
+.mobile-menu {
+    height: 90vh;
+    width: 100vw;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transform: translateY(100vh);
+    transition: 0.3s ease-in-out;
+}
+
+.menu-is-visible {
+    transform: none;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    text-align: center;
+}
+
+.mobile-menu ul li {
+    margin: 20px;
+}
+
+.mobile-menu ul li a {
+    text-decoration: none;
+}
+
+.mobile-menu-text {
+    color: black;
+    font-size: 27px;
+}
+
 .home-section {
     padding: 0;
     display: flex;
@@ -280,7 +325,6 @@ section {
 }
 
 .about-header-svg {
-    height: 100%;
     width: 100%;
 }
 
@@ -424,4 +468,12 @@ footer ul li a {
 footer p {
     color: #fff;
     font-size: 11px;
+}
+
+
+@media only screen and (max-width: 400px) {
+    nav {
+        position: fixed;
+        z-index: 3;
+    }
 }
