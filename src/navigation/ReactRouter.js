@@ -4,7 +4,7 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import { BrowserView, MobileView } from "react-device-detect";
+import { BrowserView, MobileView, isMobileOnly } from "react-device-detect";
 
 //NAVIGATION
 import NavigationBar from "./NavigationBar";
@@ -34,7 +34,7 @@ export default function RouteNavigator() {
         <Switch>
           <Route exact path="/">
             <Home />
-            <Footer style={styles.fullScreenPage} />
+            <Footer style={ isMobileOnly ? { backgroundColor: "#a7cfe5" } : styles.fullScreenPage} />
           </Route>
           <Route path="/about">
             <About />

@@ -186,7 +186,9 @@ section {
 }
 
 .mobile-menu {
-    height: 90vh;
+    list-style: none;
+    text-align: center;
+    height: 0vh;
     width: 100vw;
     background-color: #fff;
     display: flex;
@@ -198,26 +200,30 @@ section {
     transition: 0.3s ease-in-out;
 }
 
-.menu-is-visible {
-    transform: none;
-}
-
-.mobile-menu ul {
-    list-style: none;
-    text-align: center;
-}
-
-.mobile-menu ul li {
-    margin: 20px;
-}
-
-.mobile-menu ul li a {
-    text-decoration: none;
-}
-
 .mobile-menu-text {
     color: black;
     font-size: 27px;
+    opacity: 0;
+    transform: translateY(100vh);
+    transition: 0.6s ease-in-out;
+}
+
+.mobile-text-is-visible {
+    opacity: 1;
+    transform: none;
+}
+
+.menu-is-visible {
+    transform: none;
+    height: 90vh;
+}
+
+.mobile-menu li {
+    margin: 20px;
+}
+
+.mobile-menu li a {
+    text-decoration: none;
 }
 
 .home-section {
@@ -474,6 +480,27 @@ footer p {
 @media only screen and (max-width: 400px) {
     nav {
         position: fixed;
-        z-index: 3;
+        z-index: 2;
+    }
+    .home-contents-wrapper {
+        flex-direction: column;
+        height: auto;
+    }
+    .home-contents:nth-of-type(1) {
+        margin-top: 10vh;
+    }
+    .home-contents {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .home-button-container {
+        justify-content: center;
+    }
+    .social-icons {
+        justify-content: center;
+    }
+    #arrowDown{
+        display: none;
     }
 }
