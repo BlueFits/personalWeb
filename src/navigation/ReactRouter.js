@@ -58,5 +58,5 @@ export default function RouteNavigator() {
 }
 
 const styles = {
-  fullScreenPage: { position: "fixed", zIndex: 3, bottom: 0, width: "100%" },
+  fullScreenPage: { position: "fixed", zIndex: 3, bottom: 0, width: "100vw" },
 };

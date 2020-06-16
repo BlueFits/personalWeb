@@ -503,4 +503,55 @@ footer p {
     #arrowDown{
         display: none;
     }
+    .about-header {
+        width: 80vw;
+    }
+    .about-content {
+        width: 100vw;
+        padding: 0 6%;
+        /*overflow: hidden;*/
+    }
+    .about-text-header {
+        text-align: center;
+    }
+    .about-content-texts {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-text-highlight {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .about-text-general {
+        width: 100%;
+        text-align: justify;
+    }
+    .project-container {
+        overflow: hidden;
+    }
+    .project-header-container {
+        width: 80vw;
+    }
+    .project-content {
+        border-radius: 0px;
+        height: 70vh;
+        margin: 0;
+    }
+    .project-background {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact-container {
+        border: 1px solid;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-content-wrapper {
+        width: 80%;
+    }
+    .contact-email {
+        font-size: 25px;
+    }
 }
