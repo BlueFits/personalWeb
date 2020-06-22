@@ -554,3 +554,9 @@ footer p {
         font-size: 25px;
     }
 }
+
+@media only screen and (min-width: 1700px) {
+  #arrowDown {
+      display: none;
+  }
+}
